@@ -1,28 +1,28 @@
 {
-  "title": "Desmos Block Explorer",
-  "network": "desmos-mainnet-1",
-  "icon": "/desmos/images/icon.svg",
+  "title": "Planq Block Explorer",
+  "network": "planq_7070-2",
+  "icon": "/images/logo.svg",
   "logo": {
-    "default": "/desmos/images/logo.svg"
+    "default": "/images/logo.svg"
   },
   "prefix": {
-    "consensus": "desmosvalcons",
-    "validator": "desmosvaloper",
-    "account": "desmos"
+    "consensus": "plqvalcons",
+    "validator": "plqsvaloper",
+    "account": "plq"
   },
   "genesis": {
-    "time": "2021-07-13T08:00:00",
+    "time": "2022-08-30T11:27:57",
     "height": 1
   },
-  "primaryTokenUnit": "udsm",
-  "votingPowerTokenUnit": "udsm",
+  "primaryTokenUnit": "aplanq",
+  "votingPowerTokenUnit": "aplanq",
   "tokenUnits": {
-    "udsm": {
-      "display": "dsm",
-      "exponent": 6
+    "aevmos": {
+      "display": "planq",
+      "exponent": 18
     }
   },
   "extra": {
-    "profile": true
+    "profile": false
   }
 }
