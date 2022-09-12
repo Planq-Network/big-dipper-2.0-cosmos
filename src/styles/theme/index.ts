@@ -53,47 +53,56 @@ export const common = {
     },
   },
   typography: {
-    fontFamily: '"Hind Madurai", sans-serif',
     h1: {
+      fontFamily: '"Sora", sans-serif',
       fontSize: '2rem',
       letterSpacing: 0.25,
     },
     h2: {
+      fontFamily: '"Sora", sans-serif',
       fontSize: '1.5rem',
       letterSpacing: 0,
     },
     h3: {
+      fontFamily: '"Sora", sans-serif',
       fontSize: '1.25rem',
       letterSpacing: 0.15,
     },
     h4: {
+      fontFamily: '"Sora", sans-serif',
       fontSize: '1rem',
       letterSpacing: 0.15,
     },
     h5: {
+      fontFamily: '"Sora", sans-serif',
       fontSize: '0.875rem',
       letterSpacing: 0.1,
       fontWeight: 500,
     },
     h6: {
+      fontFamily: '"Sora", sans-serif',
       fontSize: '0.75rem',
       letterSpacing: 0.1,
       fontWeight: 500,
     },
     body1: {
+      fontFamily: '"Eudoxus Sans", sans-serif',
       fontSize: '1rem',
       whiteSpace: 'pre-wrap',
       letterSpacing: 0.5,
     },
     body2: {
+      fontFamily: '"Eudoxus Sans", sans-serif',
       fontSize: '0.875rem',
       letterSpacing: 0.25,
     },
     caption: {
+      fontFamily: '"Eudoxus Sans", sans-serif',
       fontSize: '0.75rem',
       letterSpacing: 0.4,
     },
     button: {
+      fontFamily: '"Eudoxus Sans", sans-serif',
       fontSize: '0.875rem',
       letterSpacing: 1.25,
       textTransform: 'none',
