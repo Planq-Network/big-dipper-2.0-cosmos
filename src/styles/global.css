@@ -1,12 +1,24 @@
 @font-face {
-  font-family: 'Hind Madurai';
-  src: url("/desmos/fonts/HindMadurai-Regular.ttf");
+  font-family: 'Sora';
+  src: url("/fonts/Sora-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Eudoxus Sans';
+  src: url("/fonts/EudoxusSans-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Hind Madurai';
-  src: url("/desmos/HindMadurai-Regular.ttf");
+  src: url("/fonts/HindMadurai-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Hind Madurai';
+  src: url("/fonts/HindMadurai-Regular.ttf");
   font-weight: 500;
 }
 
@@ -27,7 +39,7 @@ html {
   }
 
 body {
-  font-family: "Hind Madurai", sans-serif;
+  font-family: "Eudoxus Sans", sans-serif;
   font-size: 16px;
 }
 
@@ -37,7 +49,7 @@ a {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Hind Madurai", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 400;
   margin: 0;
 }
