@@ -17,7 +17,7 @@
   "primaryTokenUnit": "aplanq",
   "votingPowerTokenUnit": "aplanq",
   "tokenUnits": {
-    "aevmos": {
+    "aplanq": {
       "display": "planq",
       "exponent": 18
     }
