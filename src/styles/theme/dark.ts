@@ -20,7 +20,7 @@ export const darkThemeOverride = {
   palette: {
     type: 'dark',
     primary: {
-      main: Color('#FD3B4C').alpha(0.7).string(),
+      main: Color('#0DD0BD').alpha(0.7).string(),
       contrastText: '#fff',
     },
     background: {
@@ -45,10 +45,10 @@ export const darkThemeOverride = {
         fontFour: '#999999',
       },
       primaryData: {
-        one: '#af2929',
-        two: '#b44516',
-        three: '#b14237',
-        four: '#b16919',
+        one: '#aaeeff',
+        two: '#5a7b92',
+        three: '#3d587b',
+        four: '#d5f6ff',
       },
       results: {
         pass: '#198a65',
