@@ -7,5 +7,6 @@
     "reportIssue": "https://github.com/planq-network/big-dipper-2.0-cosmos/issues"
   },
   "previewImage": "https://bigdipper.live/images/big-dipper-social-media.png",
+  "basePath": "/",
   "version": "base-v2.1.1"
 }
