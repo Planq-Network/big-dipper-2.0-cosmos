@@ -11,7 +11,7 @@ exports[`screen: AccountDetails/Overview matches snapshot 1`] = `
     <p
       className="MuiTypography-root label MuiTypography-body1"
     >
-      accounts:address
+      address
     </p>
     <div
       className="detail"
@@ -27,7 +27,7 @@ exports[`screen: AccountDetails/Overview matches snapshot 1`] = `
       <p
         className="MuiTypography-root value MuiTypography-body1"
       >
-        address
+        desmos1jrld5g99...y94nz
       </p>
     </div>
   </div>
@@ -37,7 +37,7 @@ exports[`screen: AccountDetails/Overview matches snapshot 1`] = `
     <p
       className="MuiTypography-root label MuiTypography-body1"
     >
-      accounts:rewardAddress
+      rewardAddress
     </p>
     <div
       className="detail"
@@ -49,7 +49,7 @@ exports[`screen: AccountDetails/Overview matches snapshot 1`] = `
       <p
         className="MuiTypography-root value MuiTypography-body1"
       >
-        withdrawalAddress
+        desmos1jrld5g99...y94nz
       </p>
     </div>
   </div>
