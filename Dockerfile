@@ -1,6 +1,6 @@
 FROM node:18.10.0-alpine
 
-ENV PORT 3000
+ENV PORT 3010
 
 # Install git for ui and internal packages
 RUN apk add --no-cache git
@@ -9,7 +9,7 @@ RUN apk add --no-cache git
 WORKDIR /app
 
 # Add PM2
-RUN yarn add pm2 -g
+RUN npm add pm2 -g
 
 # Installing dependencies
 COPY package*.json ./
