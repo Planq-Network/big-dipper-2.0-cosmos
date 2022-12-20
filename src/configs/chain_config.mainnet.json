@@ -7,7 +7,7 @@
   },
   "prefix": {
     "consensus": "plqvalcons",
-    "validator": "plqsvaloper",
+    "validator": "plqvaloper",
     "account": "plq"
   },
   "genesis": {
