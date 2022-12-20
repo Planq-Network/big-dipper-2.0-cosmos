@@ -6,6 +6,7 @@ import {
   useGetMessagesByAddressQuery,
   GetMessagesByAddressQuery,
 } from '@graphql/types/general_types';
+import { convertMsgType } from '@utils/convert_msg_type';
 import { TransactionState } from './types';
 
 const LIMIT = 50;
@@ -78,10 +79,16 @@ export const useTransactions = () => {
       // messages
       // =============================
       const messages = convertMsgsToModels(transaction);
+      const msgType = messages.map((eachMsg) => {
+        const eachMsgType = R.pathOr('none type', ['@type'], eachMsg);
+        return eachMsgType;
+      });
+      const convertedMsgType = convertMsgType(msgType);
 
       return ({
         height: transaction.height,
         hash: transaction.hash,
+        type: convertedMsgType,
         messages: {
           count: messages.length,
           items: messages,

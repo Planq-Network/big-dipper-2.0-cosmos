@@ -9,6 +9,7 @@ import {
   BlockDetailsQuery,
 } from '@graphql/types/general_types';
 import { convertMsgsToModels } from '@msg';
+import { convertMsgType } from '@utils/convert_msg_type';
 import { BlockDetailState } from './types';
 
 export const useBlockDetails = () => {
@@ -95,11 +96,17 @@ export const useBlockDetails = () => {
     const formatTransactions = () => {
       const transactions = data.transaction.map((x) => {
         const messages = convertMsgsToModels(x);
+        const msgType = messages.map((eachMsg) => {
+          const eachMsgType = R.pathOr('none type', ['@type'], eachMsg);
+          return eachMsgType;
+        });
+        const convertedMsgType = convertMsgType(msgType);
         return ({
           height: x.height,
           hash: x.hash,
           success: x.success,
           timestamp: stateChange.overview.timestamp,
+          type: convertedMsgType,
           messages: {
             count: x.messages.length,
             items: messages,
