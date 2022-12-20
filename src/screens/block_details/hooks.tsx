@@ -96,7 +96,7 @@ export const useBlockDetails = () => {
     const formatTransactions = () => {
       const transactions = data.transaction.map((x) => {
         const messages = convertMsgsToModels(x);
-        const msgType = messages.map((eachMsg) => {
+        const msgType = x.messages.map((eachMsg) => {
           const eachMsgType = R.pathOr('none type', ['@type'], eachMsg);
           return eachMsgType;
         });
