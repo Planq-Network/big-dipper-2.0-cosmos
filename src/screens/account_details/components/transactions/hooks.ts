@@ -79,7 +79,7 @@ export const useTransactions = () => {
       // messages
       // =============================
       const messages = convertMsgsToModels(transaction);
-      const msgType = messages.map((eachMsg) => {
+      const msgType = transaction.messages.map((eachMsg) => {
         const eachMsgType = R.pathOr('none type', ['@type'], eachMsg);
         return eachMsgType;
       });
